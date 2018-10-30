@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <EditText
+        android:id="@+id/btnusuario"
+        android:layout_width="141dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnnombre"
+        app:layout_constraintEnd_toStartOf="@+id/btnclave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/btnclave"
+        android:layout_width="146dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnapellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnusuario"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/btncorreo"
+        android:layout_width="141dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/rgenero"
+        app:layout_constraintEnd_toStartOf="@+id/txtcelular"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/btnnombre"
+        android:layout_width="144dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btncorreo"
+        app:layout_constraintEnd_toStartOf="@+id/btnapellido"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnusuario" />
+
+    <EditText
+        android:id="@+id/btnapellido"
+        android:layout_width="145dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtcelular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnnombre"
+        app:layout_constraintTop_toBottomOf="@+id/btnclave" />
+
+    <Button
+        android:id="@+id/btnregistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="63dp"
+        android:text="Registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/txtfecha" />
+
+    <EditText
+        android:id="@+id/txtcelular"
+        android:layout_width="143dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:ems="10"
+        android:hint="Celular"
+        android:inputType="number"
+        android:maxLength="10"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:text="09"
+        app:layout_constraintBottom_toTopOf="@+id/swbeca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btncorreo"
+        app:layout_constraintTop_toBottomOf="@+id/btnapellido" />
+
+    <Switch
+        android:id="@+id/swbeca"
+        android:layout_width="90dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:text="Beca"
+        android:textOff="No"
+        android:textOn="Yes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rgenero"
+        app:layout_constraintTop_toBottomOf="@+id/txtcelular" />
+
+    <RadioGroup
+        android:id="@+id/rgenero"
+        android:layout_width="155dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="21dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/txtcelular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncorreo">
+
+        <RadioButton
+            android:id="@+id/rhombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+        android:textOn="1"
+
+        <RadioButton
+            android:id="@+id/rmujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femenino" />
+
+        <RadioButton
+            android:id="@+id/rvacio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prefiero no especificar" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="170dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginBottom="33dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnregistro"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <CheckBox
+            android:id="@+id/Mdatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analisis de datos"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="392dp" />
+
+        <CheckBox
+            android:id="@+id/MInformacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sistemas de Informacion"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="392dp" />
+
+        <CheckBox
+            android:id="@+id/Mweb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Programacion Web"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="353dp" />
+
+        <CheckBox
+            android:id="@+id/MOptativa3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Optativa 3"
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="353dp" />
+
+        <CheckBox
+            android:id="@+id/Mtitulacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mtitulacion"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="353dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtfecha"
+        android:layout_width="126dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="72dp"
+        android:ems="10"
+        android:hint="Fecha"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnregistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/swbeca" />
+
+</android.support.constraint.ConstraintLayout>
