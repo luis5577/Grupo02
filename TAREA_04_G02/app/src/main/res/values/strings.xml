@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">TAREA_04_G02</string>
-    <string name="titlulo_pickers">Obtener fecha y hora</string>
-
-    <string name="formato_fecha">dd/mm/yyyy</string>
-    <string name="formato_hora">hh:mm</string>
-</resources>
