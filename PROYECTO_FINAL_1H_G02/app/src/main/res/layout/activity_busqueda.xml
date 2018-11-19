@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ec.edu.uce.vista.busqueda">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="368dp"
+        android:layout_height="497dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/txtbuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="99dp"
+            android:layout_marginBottom="35dp"
+            android:ems="10"
+            android:hint="Busqueda"
+            android:inputType="textPersonName"
+
+            />
+
+        <EditText
+            android:id="@+id/txtPlaca2"
+            android:layout_width="210dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="158dp"
+            android:layout_marginRight="158dp"
+            android:layout_marginBottom="23dp"
+            android:ems="10"
+            android:hint="Placa"
+            android:inputType="textPersonName"
+            android:layout_below="@id/txtbuscar"
+            />
+
+        <EditText
+            android:id="@+id/txtMarca2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="153dp"
+            android:layout_marginRight="153dp"
+            android:layout_marginBottom="22dp"
+            android:ems="10"
+            android:hint="Marca"
+            android:inputType="textPersonName"
+            android:layout_below="@id/txtPlaca2"
+            />
+
+        <EditText
+            android:id="@+id/txtCosto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="153dp"
+            android:layout_marginRight="153dp"
+            android:layout_marginBottom="32dp"
+            android:ems="10"
+            android:hint="Costo"
+            android:inputType="textPersonName"
+            android:layout_below="@id/txtMarca2"
+            />
+
+        <Switch
+            android:id="@+id/swmatricula2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginBottom="98dp"
+            android:text="Matriculado"
+            android:layout_below="@id/txtCosto2"
+            />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rdcolor2"
+                android:layout_width="103dp"
+                android:layout_height="111dp"
+                android:layout_below="@id/swmatricula2"
+                android:layout_marginTop="-68dp"
+                android:layout_marginEnd="76dp"
+                android:layout_marginRight="76dp"
+                android:layout_marginBottom="234dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rdnegro2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Negro" />
+
+                <RadioButton
+                    android:id="@+id/rdblanco2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blanco" />
+
+                <RadioButton
+                    android:id="@+id/rdotro2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Otro" />
+            </RadioGroup>
+
+
+            <Spinner
+                android:id="@+id/spinner_dia"
+                android:layout_width="130dp"
+                android:layout_height="57dp"
+                android:layout_below="@id/rdcolor2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-130dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spinner_mes"
+                android:layout_width="129dp"
+                android:layout_height="54dp"
+                android:layout_below="@id/spinner_dia"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="26dp"
+                android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/spinner_ano"
+            android:layout_width="130dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="100dp"
+            android:layout_weight="1"
+            android:layout_below="@id/spinner_mes"
+           />
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ec.edu.uce.vista.editar">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="368dp"
+        android:layout_height="497dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+
+    <EditText
+        android:id="@+id/txtPlaca"
+        android:layout_width="210dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginRight="158dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Placa"
+        android:inputType="textPersonName"
+
+      />
+
+    <EditText
+        android:id="@+id/txtMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginRight="158dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="Marca"
+        android:inputType="textPersonName"
+        android:layout_below="@id/txtPlaca"
+         />
+
+    <EditText
+        android:id="@+id/txtCosto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginRight="158dp"
+        android:ems="10"
+        android:hint="Costo"
+        android:inputType="textPersonName"
+        android:layout_below="@id/txtMarca"
+       />
+
+    <Switch
+        android:id="@+id/swmatricula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="44dp"
+        android:text="Matriculado"
+
+        android:layout_below="@id/txtCosto"
+        android:layout_alignParentLeft="true"
+        />
+
+
+            <Spinner
+                android:id="@+id/spinner_dia"
+                android:layout_width="118dp"
+                android:layout_height="51dp"
+                android:layout_below="@id/swmatricula"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="25dp"
+
+                android:layout_marginBottom="86dp"
+                android:layout_weight="1"
+
+                />
+
+            <Spinner
+                android:id="@+id/spinner_mes"
+                android:layout_width="129dp"
+                android:layout_height="54dp"
+                android:layout_below="@id/spinner_dia"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="-77dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spinner_ano"
+                android:layout_width="129dp"
+                android:layout_height="57dp"
+                android:layout_below="@id/spinner_mes"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="100dp"
+                android:layout_weight="1" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rdcolor"
+                android:layout_width="103dp"
+                android:layout_height="102dp"
+                android:layout_below="@id/spinner_ano"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="27dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="-82dp"
+                android:layout_marginEnd="76dp"
+                android:layout_marginRight="76dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rdnegro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Negro" />
+
+                <RadioButton
+                    android:id="@+id/rdblanco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blanco" />
+
+                <RadioButton
+                    android:id="@+id/rdotro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Otro" />
+            </RadioGroup>
+
+            <ListView
+                android:id="@+id/listado"
+                android:layout_width="match_parent"
+                android:layout_height="769dp"
+                android:layout_below="@id/rdcolor"></ListView>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

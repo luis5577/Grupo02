@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/item1"
+        android:title="Buscar"
+        app:showAsAction="collapseActionView" />
+    <item android:id="@+id/item2"
+        android:title="Actualizar"
+        app:showAsAction="collapseActionView" />
+    <item android:id="@+id/item3"
+        android:title="Borrar"
+        app:showAsAction="collapseActionView" />
+    <item android:id="@+id/item4"
+        android:title="Regresar"
+        app:showAsAction="collapseActionView" />
+    <item android:id="@+id/item5"
+        android:title="Salir de la aplicacion"
+        app:showAsAction="collapseActionView" />
+
+
+</menu>
